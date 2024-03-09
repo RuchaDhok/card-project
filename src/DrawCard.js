@@ -28,7 +28,7 @@ const DrawCard = () => {
       const splicedCards = deckOfCards.splice(0, 5);
       setCardSpliced((prev) => [prev + splicedCards + ","]);
     } else {
-      alert("Deck have only 2 cards. Can't draw the cards!!");
+      alert("Cards can only be drawn if the deck >= 5 cards");
     }
     if (deckOfCards.length === 0) {
       setDeckOfCard(shuffledDeck);
